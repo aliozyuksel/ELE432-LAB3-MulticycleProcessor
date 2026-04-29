@@ -80,4 +80,4 @@ The waveforms below verify the correct execution flow and memory write operation
 4. Observe the console for the `Simulation succeeded` message.
 
 ## Author
-**Ali Özyüksel**
+**Ali Özyüksel** Hacettepe University, Electrical and Electronics Engineering
