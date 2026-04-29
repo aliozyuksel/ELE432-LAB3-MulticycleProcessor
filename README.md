@@ -78,6 +78,19 @@ The waveforms below verify the correct execution flow and memory write operation
 2. Load the `testbench` module.
 3. Run with `vsim -voptargs="+acc" work.testbench`.
 4. Observe the console for the `Simulation succeeded` message.
+5. Additionaly, you can put those commands in console and see that waveform changing:
+`add wave -noupdate -radix binary /testbench/clk
+add wave -noupdate -radix binary /testbench/reset
+add wave -noupdate -radix hexadecimal /testbench/dut/core/dp/PC
+add wave -noupdate -radix hexadecimal /testbench/dut/core/dp/Instr
+add wave -noupdate /testbench/dut/core/c/fsm/state
+add wave -noupdate -radix hexadecimal /testbench/dut/core/dp/SrcA
+add wave -noupdate -radix hexadecimal /testbench/dut/core/dp/SrcB
+add wave -noupdate -radix hexadecimal /testbench/dut/core/dp/ALUResult
+add wave -noupdate -radix hexadecimal /testbench/dut/DataAdr
+add wave -noupdate -radix hexadecimal /testbench/dut/WriteData
+add wave -noupdate -radix binary /testbench/dut/MemWrite
+add wave -noupdate /testbench/dut/unified_memory/rd`
 
 ## Author
 **Ali Özyüksel** Hacettepe University, Electrical and Electronics Engineering
